@@ -1,0 +1,49 @@
+sequenceDiagram
+actor User
+participant site
+participant server
+participant database
+
+Note over User: enters site
+Note over User: click on login
+
+User ->>+ site: login
+site ->> User: request credentials
+User ->> site: enter credentials
+site ->>+ server: verify credentials
+
+alt is credentials valid
+server -->> site: credentials ok
+site ->> server: fetch all post 
+server ->>+ database: get all posters
+database -->>- server: all posters
+server -->> site: send all posters
+site ->> User: show all posters
+
+else is credentials invalid
+server -->>- site: credentials invalid
+site ->>- User:request invalid credentials
+end
+
+%% add post
+Note over User: click on add post
+User ->>+ site: add post
+site ->> User: request post detials
+User ->> site: enter post detials
+
+alt detials post valid
+site ->> User: detial valid
+User ->> site: submite post detials
+site ->>+ server: start post Add
+server ->>+ database: Added
+database -->> server: succees
+server -->> site: detials post
+site  -->> User: succees
+
+else detials post not valid
+database -->>- server: failed
+server -->>- site: error of duplicate details
+site ->> User: errer message
+site ->>- User: detials invalid
+
+end

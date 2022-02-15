@@ -1,0 +1,25 @@
+classDiagram
+direction LR
+User "1.1" -- "1.*"Comments
+User"1.1" -- "1.*"Post
+User: +String email
+User: +Password password
+User: +int Id
+User: login()
+User: +Add
+User: +update
+User: +Dellet
+
+
+class Post{
+    +int Id
+    +String titre
+    +String description
+    +String photo
+    +String categorie
+}
+class Comments{
+    +int Id
+    +String One comments
+    +String More comments 
+}
