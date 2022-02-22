@@ -1,0 +1,88 @@
+@import "../abstracts/media";
+
+body{
+   background: $background-color;
+}
+
+  .sing-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+    @include desktop {
+      margin: 8rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .information{
+      padding: 2rem;
+      @include desktop{
+        width: 20rem;
+      } 
+      h1{
+        color: $hover-color;
+        text-align: center;
+        @include desktop{
+          text-align: start;
+        }
+      }
+      p{
+        margin-top: 3rem;
+        color: #E5E5E5;
+      }
+    }
+    .form{
+      background-color: $border-color;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      border-radius: 2rem;
+      
+      @include tablet{
+        width: 30rem;
+      }
+      
+      @include desktop{
+        width: 30rem;
+      }
+    }
+    h2{
+      font-size:x-large;
+      color: #E5E5E5;
+    }  
+      input{
+        color: #E5E5E5;
+        background-color: $background-color;
+        height: 2rem;
+        border-style: none;
+        border: 1px solid #E5E5E5;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .botton{
+        background-color: $botton-color;
+        color: #E5E5E5;
+        font-weight: bold;
+        height: 3rem;
+        padding: 0.5rem;
+      }
+
+      .a{
+        color: $hover-color;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: end;
+        
+      }
+      .botton:hover{
+        background-color: $hover-color;
+        transition: all ease;
+    }
+}
