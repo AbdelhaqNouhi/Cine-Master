@@ -1,11 +1,3 @@
-<?php
- require "../controller/user.controllee.php";
-    if(isset($_POST["sing_up"])){
-        $sing = new UserController();
-        $sing -> add_user();
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +9,7 @@
 </head>
 <body>
     <div class="sing-up">
-        <form action="#" method="POST">
+        <form action="../controller/singup.controller.php" method="POST">
             <div class="titre">
                 <h1>Cine Master</h1>
             </div>

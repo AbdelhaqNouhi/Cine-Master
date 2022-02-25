@@ -1,9 +1,17 @@
 <?php
 
-//   include "./view/Sing-In.php";
-// if(isset($_GET["./"])){
-//     include "./view/Sing-In.php";
-// }
-// header("location: http://localhost/brief5-Cine-Master/developement/view/sing-In.php");
 
-header("locatin")
+if (isset($_SESSION['email'])){
+    header("location: ./view/home.php");
+}
+
+if (!isset($_SESSION)){
+    session_start();  
+    header("location: ./view/Sing-In.php");
+}
+
+    session_start();
+    session_unset();
+    session_destroy();
+    $_SESSION = null;
+    require "./view/Sing-In.php";

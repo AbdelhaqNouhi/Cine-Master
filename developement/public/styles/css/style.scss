@@ -1,0 +1,14 @@
+@import "../../abstracts/variable";
+@import "../home";
+@import "../sing-in";
+@import "../sing-up";
+
+@import "../../abstracts/media";
+
+
+*{
+    font-family: $fonts;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }

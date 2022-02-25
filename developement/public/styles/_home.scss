@@ -96,12 +96,9 @@ body {
   color: $white-color;
   margin-left: 1rem;
 }
-.img-post {
-  height: 20rem;
-  border-radius: 0.5rem;
-  border: $white-color;
+.titel{
+  color: $hover-color;
 }
-
 .spa{
     margin: 1rem;
     color: $white-color;
@@ -149,4 +146,30 @@ body {
   width: 3rem;
   height: 2rem;
   fill: currentColor;
+}
+
+// -------------------------------------------------
+.modal-content{
+  height: 30rem;
+}
+.modal-body input{
+  width: 100%;
+}
+.modal-title{
+  color: $botton-color;
+}
+
+.modal-body input{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: $white-color 1px solid;
+}
+.modal-footer{
+  
+  input{
+    color: $white-color;
+    background-color: $botton-color;
+    border-radius: 0.5rem;
+    border: $white-color 1px solid;
+  }
 }

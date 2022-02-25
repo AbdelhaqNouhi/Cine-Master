@@ -1,7 +1,13 @@
 <?php
 require "../model/user.model.php";
+// require "../model/connect.php";
 
 
+
+if(isset($_POST["sing_up"])){
+    $sing = new UserController();
+    $sing -> add_user();
+}
 
 class UserController
 {
@@ -14,10 +20,14 @@ class UserController
             $data = array(
                 "username" => $username,
                 "email" => $email, 
-                "password" => $password,
-            );
+                "password" => $password
+                );
             $usr = new UserModel();
             $usr->add_user($data);
+
+            if($data){
+                header('location: ./login.php');
+            }
         }
     }
 }

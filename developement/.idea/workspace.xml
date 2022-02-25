@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce25c304-80c8-423b-b52b-966c41829d25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/view/Sing-In.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Sing-Up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/post.controllee.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/post.controllee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/user.controllee.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controllee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/db/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/post.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/post.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/_sing-in.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/_sing-in.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/_sing-up.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/_sing-up.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Sing-In.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Sing-In.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Sing-Up.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Sing-Up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../patien.poo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/brief4-cabinet/developement" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,6 +75,7 @@
       <workItem from="1645279222800" duration="130000" />
       <workItem from="1645480298546" duration="5000" />
       <workItem from="1645482387400" duration="53000" />
+      <workItem from="1645727226926" duration="85000" />
     </task>
     <servers />
   </component>
