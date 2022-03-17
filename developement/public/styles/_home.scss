@@ -99,9 +99,25 @@ body {
 .titel{
   color: $hover-color;
 }
+.user_comment{
+  display: flex;
+}
+.img_comment {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 .spa{
+  width: fit-content;
     margin: 1rem;
+    padding: 0.5rem;
     color: $white-color;
+    background-color: $background-color;
+    border-radius: 0.5rem;  
+    border: 1px solid $white-color; 
 }
 
 .commit {
@@ -115,14 +131,14 @@ body {
   border-style: none;
   border: 1px solid $white-color;
 }
-.commit a {
-  width: 4rem;
+.commit {
+  // width: 4rem;
   height: 2rem;
   padding: 0px 4px !important;
   margin: 1rem 0;
 
   @include desktop {
-    margin: 0;
+    margin: 0.5rem 0;
   }
 }
 
@@ -165,6 +181,10 @@ body {
   border: $white-color 1px solid;
 }
 .modal-footer{
+
+  :hover{
+    color: $white-color;
+  }
   
   input{
     color: $white-color;

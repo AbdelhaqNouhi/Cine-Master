@@ -1,5 +1,5 @@
 <?php
-include "../model/connect.php";
+include "connect.php";
 
 class UserModel extends db
 {
@@ -14,9 +14,12 @@ class UserModel extends db
 
     public function login($data)
     {
-        $sql = "SELECT  email and password FROM user WHERE email=:email and password=:password";
+        $sql = "SELECT * FROM user WHERE BINARY email= ?";
         $stmnt = $this->connect()->prepare($sql);
-        $stmnt -> execute($data);
-        return $stmnt->fetch(PDO::FETCH_ASSOC);
+        $stmnt -> execute(array($data));
+        $res = $stmnt->fetch(PDO::FETCH_OBJ);
+        // var_dump($data);
+        // die();
+        return $res;
     }
 }

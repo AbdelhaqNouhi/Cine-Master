@@ -125,9 +125,32 @@ body {
   color: #E9A6A6;
 }
 
+.user_comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img_comment {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.img_comment img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .spa {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 1rem;
+  padding: 0.5rem;
   color: #E5E5E5;
+  background-color: #1F1D36;
+  border-radius: 0.5rem;
+  border: 1px solid #E5E5E5;
 }
 
 .commit {
@@ -143,16 +166,15 @@ body {
   border: 1px solid #E5E5E5;
 }
 
-.commit a {
-  width: 4rem;
+.commit {
   height: 2rem;
   padding: 0px 4px !important;
   margin: 1rem 0;
 }
 
 @media only screen and (min-width: 992px) {
-  .commit a {
-    margin: 0;
+  .commit {
+    margin: 0.5rem 0;
   }
 }
 
@@ -197,6 +219,10 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   border: #E5E5E5 1px solid;
+}
+
+.modal-footer :hover {
+  color: #E5E5E5;
 }
 
 .modal-footer input {
@@ -440,6 +466,39 @@ body {
   background-color: #E9A6A6;
   -webkit-transition: all ease;
   transition: all ease;
+}
+
+.update {
+  padding: 1rem;
+  width: 30rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  border-radius: 0.3rem;
+}
+
+.update input {
+  border-radius: 0.5rem;
+  border: #E5E5E5 1px solid;
+  padding: 1rem;
+}
+
+.update .botton {
+  color: #E5E5E5;
+  background-color: #1A1B26;
+  border-radius: 0.5rem;
+  border: #E5E5E5 1px solid;
+  padding: 0.5rem;
 }
 
 * {

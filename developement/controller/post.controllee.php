@@ -1,6 +1,8 @@
 <?php
 require "../model/post.model.php";
 
+session_start();
+
 class PostCnotroller
 {
     public function get_post()
@@ -8,26 +10,23 @@ class PostCnotroller
         $get = new PostModel();
         return $get->get_post();
     }
-
+    
     public function add_post()
     {
         if(isset($_POST["Goo"])){
-            // $username = $_SESSION["username"];
-            $title = $_POST["title"];
-            $description = $_POST["description"];
-            $image = $_POST["url"];
-            // $categorie = $_POST["categorie"];
-
             $data = array(
-                // "username" => $username,
-                "title" => $title,
-                "description" => $description,
-                "image" => $image,
+                "title" => $_POST["title"],
+                "description" => $_POST["description"],
+                "image" => $_POST["url"],
+                "user_id" => $_SESSION["id"]
                 // "categorie" => $categorie
             );
+
+            // var_dump($data);
+            // die();
             $add = new PostModel();
             $add->add_post($data);
-
+            
             if($add){
                 header("location: ../view/home.php");
             }
@@ -35,9 +34,21 @@ class PostCnotroller
     }
 
     public function update_post()
-    {
+    {    
+        $data = array(
+            "title" => $_POST["title"],
+            "description" => $_POST["description"],
+            "image" => $_POST["url"],
+            "post_id" => $_POST["id"]
+            // "categorie" => $categorie
+        );
+        // var_dump($data);
+        // die();
         $update = new PostModel();
-        $update->update_post();
+        $update->update_post($data);
+        if($update){
+            header("location: ../view/home.php");
+        }
     }
 
     public function delete_post()
@@ -64,5 +75,14 @@ class PostCnotroller
     }
 
     if(isset($_POST["update"])){
-        header("locatino; ../view/update.php");
+        $update = new PostCnotroller();
+        $update->update_post();
     }
+    
+    if (isset($_GET["logout"]))
+    {
+        session_unset();
+        session_destroy();
+        unset($_SESSION);
+        header("location: ../view/Sing-In.php");
+    }   
